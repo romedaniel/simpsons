@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.cdnfonts.com/css/simpsonfont" rel="stylesheet">
+    <link rel="stylesheet" href="titulo.css">
+    <title>Los Simpsons</title>
+</head>
+<body class="yellow lighten-2" onload="nuevaPagina(true)">
+    
+        <div class="titulo">
+            <img src="titulo.webp" alt="titulo">
+        </div>
+
+    <div class="container">
+        <div class="container center">
+            <h4 id="titulo" class="blue-text">Listado de Personajes</h4>
+            <br>
+        </div>
+
+        <div class="container">
+            <input class="blue-text" type="text" placeholder="Nombre de Personaje" id="nombre">
+            <input class="btn-large blue" type="button" id="busqueda" value="Buscar" onclick="buscarPersonaje()">
+        </div>
+        <br>
+
+        <div class="row" id="listado"></div>
+
+
+    </div>
+
+    <div class="container center">
+        <button class="btn-large pink" onclick="nuevaPagina(false)"><b>Anterior</b></button>
+        <button class="btn-large purple" onclick="location.reload()"><b>Incio</b></button>
+        <button class="btn-large pink" onclick="nuevaPagina(true)"><b>Siguiente</b></button>
+    </div>
+    <br>
+    
+    <script src="app.js"></script>
+</body>
+</html>
